@@ -32,5 +32,18 @@ final class SolveSwiftTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testLoadChallenges(){
+        let model = ChallengesModel()
+        model.loadChallenges()
+        XCTAssertEqual(model.challenges.count, 3)
+    }
+    
+    func testChallenge0(){
+        let model = ChallengesModel()
+        model.loadChallenges()
+        XCTAssertEqual(model.challenges[0].question, model.challenges[0].solutions[0])
+        
+    }
 
 }

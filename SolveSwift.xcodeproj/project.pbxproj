@@ -14,6 +14,14 @@
 		5C8D84F629CDD2460045620E /* SolveSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D84F529CDD2460045620E /* SolveSwiftTests.swift */; };
 		5C8D850029CDD2470045620E /* SolveSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D84FF29CDD2470045620E /* SolveSwiftUITests.swift */; };
 		5C8D850229CDD2470045620E /* SolveSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D850129CDD2470045620E /* SolveSwiftUITestsLaunchTests.swift */; };
+		5C8D851129CDD5710045620E /* ChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851029CDD5710045620E /* ChallengeModel.swift */; };
+		5C8D851329CDDEF80045620E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851229CDDEF80045620E /* Challenge.swift */; };
+		5C8D851529CDE2CF0045620E /* Challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D851429CDE2CF0045620E /* Challenges.json */; };
+		5C8D851729CDE77C0045620E /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851629CDE77C0045620E /* ChallengesView.swift */; };
+		5C8D851929CDE7920045620E /* ChallengesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851829CDE7920045620E /* ChallengesModel.swift */; };
+		5C8D851B29D053360045620E /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851A29D053360045620E /* ChallengeView.swift */; };
+		5C8D851D29D1D9F20045620E /* SolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851C29D1D9F20045620E /* SolutionView.swift */; };
+		5C8D851F29D1DF700045620E /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851E29D1DF700045620E /* HintView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		5C8D84FB29CDD2470045620E /* SolveSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolveSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8D84FF29CDD2470045620E /* SolveSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveSwiftUITests.swift; sourceTree = "<group>"; };
 		5C8D850129CDD2470045620E /* SolveSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C8D851029CDD5710045620E /* ChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModel.swift; sourceTree = "<group>"; };
+		5C8D851229CDDEF80045620E /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		5C8D851429CDE2CF0045620E /* Challenges.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Challenges.json; sourceTree = "<group>"; };
+		5C8D851629CDE77C0045620E /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
+		5C8D851829CDE7920045620E /* ChallengesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesModel.swift; sourceTree = "<group>"; };
+		5C8D851A29D053360045620E /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		5C8D851C29D1D9F20045620E /* SolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionView.swift; sourceTree = "<group>"; };
+		5C8D851E29D1DF700045620E /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +110,10 @@
 		5C8D84E329CDD2440045620E /* SolveSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5C8D851429CDE2CF0045620E /* Challenges.json */,
 				5C8D84E429CDD2440045620E /* SolveSwiftApp.swift */,
-				5C8D84E629CDD2440045620E /* ContentView.swift */,
+				5C8D852129D1E5060045620E /* Views */,
+				5C8D852029D1E4F80045620E /* Models */,
 				5C8D84E829CDD2460045620E /* Assets.xcassets */,
 				5C8D84EA29CDD2460045620E /* Preview Content */,
 			);
@@ -125,6 +143,28 @@
 				5C8D850129CDD2470045620E /* SolveSwiftUITestsLaunchTests.swift */,
 			);
 			path = SolveSwiftUITests;
+			sourceTree = "<group>";
+		};
+		5C8D852029D1E4F80045620E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C8D851829CDE7920045620E /* ChallengesModel.swift */,
+				5C8D851229CDDEF80045620E /* Challenge.swift */,
+				5C8D851029CDD5710045620E /* ChallengeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C8D852129D1E5060045620E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C8D851C29D1D9F20045620E /* SolutionView.swift */,
+				5C8D851629CDE77C0045620E /* ChallengesView.swift */,
+				5C8D851A29D053360045620E /* ChallengeView.swift */,
+				5C8D851E29D1DF700045620E /* HintView.swift */,
+				5C8D84E629CDD2440045620E /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8D84EC29CDD2460045620E /* Preview Assets.xcassets in Resources */,
+				5C8D851529CDE2CF0045620E /* Challenges.json in Resources */,
 				5C8D84E929CDD2460045620E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8D851729CDE77C0045620E /* ChallengesView.swift in Sources */,
+				5C8D851F29D1DF700045620E /* HintView.swift in Sources */,
 				5C8D84E729CDD2440045620E /* ContentView.swift in Sources */,
 				5C8D84E529CDD2440045620E /* SolveSwiftApp.swift in Sources */,
+				5C8D851B29D053360045620E /* ChallengeView.swift in Sources */,
+				5C8D851129CDD5710045620E /* ChallengeModel.swift in Sources */,
+				5C8D851929CDE7920045620E /* ChallengesModel.swift in Sources */,
+				5C8D851D29D1D9F20045620E /* SolutionView.swift in Sources */,
+				5C8D851329CDDEF80045620E /* Challenge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,8 +471,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +480,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.youroutines.SolveSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,8 +503,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +512,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.youroutines.SolveSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

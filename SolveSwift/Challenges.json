@@ -1,0 +1,33 @@
+[
+    {
+        "id": 0,
+        "name" : "Unwanted cat",
+        "category": "retain cycle",
+        "question": "The code introduces a bug. Correct the code.",
+        "edit": "class Cat{\n    var name  = \"Tom\"\n    \n    init(){\n        print(\"\\(self.name) created\")\n    }\n    \n    deinit{\n        print(\"\\(self.name) deinitialized\")\n    }\n    \n    lazy var meau : () -> Void = {\n        print(\"\\(self.name) meau\")\n    }\n    \n}\n\nvar cat : Cat? = Cat()\ncat!.meau()\ncat = nil",
+        "solutions": ["class Cat{\n    var name  = \"Tom\"\n    \n    init(){\n        print(\"\\(self.name) created\")\n    }\n    \n    deinit{\n        print(\"\\(self.name) deinitialized\")\n    }\n    \n    lazy var meau : () -> Void = {[unowned self] in\n        print(\"\\(self.name) meau\")\n    }\n    \n}\n\nvar cat : Cat? = Cat()\ncat!.meau()\ncat = nil"],
+        "hint": "Retain cycle"
+        
+    },
+    {
+        
+        "id": 1,
+        "name" : "GCD order",
+        "category": "concurrency",
+        "question": "What will be printed to the console?\n\nimport UIKit\n\nclass MyViewController : UIViewController{\n    override func viewDidLoad(){\n        super.viewDidLoad()\n        print(2)\n        DispatchQueue.main.async {\n            print(3)\n            DispatchQueue.main.sync {\n                print(5)\n            }\n            print(4)\n        }\n        print(6)\n    }\n}\n\nlet vc = MyViewController()\nprint(1)\nvc.view.backgroundColor = .red\nprint(7)",
+        "edit": "1234567",
+        "solutions": ["12673"],
+        "hint": "Look for dead lock"
+        
+    },
+    {
+        "id": 2,
+        "name" : "Third challenge",
+        "category": "first",
+        "question": "Correct the code",
+        "edit": "Hello world",
+        "solutions": ["Ford", "BMW", "Fiat"],
+        "hint": "Retain cycle"
+        
+    }
+]
