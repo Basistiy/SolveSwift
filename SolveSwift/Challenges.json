@@ -22,12 +22,12 @@
     },
     {
         "id": 2,
-        "name" : "Third challenge",
-        "category": "first",
-        "question": "Correct the code",
-        "edit": "Hello world",
-        "solutions": ["Ford", "BMW", "Fiat"],
-        "hint": "Retain cycle"
+        "name" : "Order of async code execution",
+        "category": "concurrency",
+        "question": "What will be printed to the console? \n\nimport Foundation\n\nlet queue = DispatchQueue(label: \"test\")\nfunc testQueue() {\n    queue.async {\n        print(\"0\")\n\n        DispatchQueue.global().async {\n            print(\"1\")\n        }\n\n        DispatchQueue.global().sync {\n            print(\"2\")\n        }\n\n        DispatchQueue.global().async {\n            print(\"3\")\n        }\n    }\n    \n    queue.sync {\n        print(\"4\")\n    }\n    \n    print(\"5\")\n}\ntestQueue()",
+        "edit": "012345",
+        "solutions": ["021345"],
+        "hint": ""
         
     }
 ]
