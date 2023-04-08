@@ -1,6 +1,6 @@
 # SolveSwift
 
-SolveSwift is a simple application that can be useful for iOS developers to pass some challenges frequently encountered at interviews. 
+SolveSwift is a simple application that can be useful for iOS developers to pass some challenges frequently encountered at job interviews live coding sessions. 
 
 ## Installation
 
