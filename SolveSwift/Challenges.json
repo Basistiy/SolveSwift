@@ -13,7 +13,7 @@
         
         "id": 1,
         "name" : "GCD order",
-        "category": "concurrency",
+        "category": "Concurrency",
         "question": "What will be printed to the console?\n\nimport UIKit\n\nclass MyViewController : UIViewController{\n    override func viewDidLoad(){\n        super.viewDidLoad()\n        print(2)\n        DispatchQueue.main.async {\n            print(3)\n            DispatchQueue.main.sync {\n                print(5)\n            }\n            print(4)\n        }\n        print(6)\n    }\n}\n\nlet vc = MyViewController()\nprint(1)\nvc.view.backgroundColor = .red\nprint(7)",
         "edit": "1234567",
         "solutions": ["12673"],
@@ -27,6 +27,26 @@
         "question": "What will be printed to the console? \n\nimport Foundation\n\nlet queue = DispatchQueue(label: \"test\")\nfunc testQueue() {\n    queue.async {\n        print(\"0\")\n\n        DispatchQueue.global().async {\n            print(\"1\")\n        }\n\n        DispatchQueue.global().sync {\n            print(\"2\")\n        }\n\n        DispatchQueue.global().async {\n            print(\"3\")\n        }\n    }\n    \n    queue.sync {\n        print(\"4\")\n    }\n    \n    print(\"5\")\n}\ntestQueue()",
         "edit": "012345",
         "solutions": ["021345"],
+        "hint": ""
+        
+    },
+    {
+        "id": 3,
+        "name" : "Optional error",
+        "category": "compilation error",
+        "question": "Correct the code to avoid compilation error",
+        "edit": "struct A{\n    let b = 10\n}\nlet a : A? = A()\nprint(a.b)",
+        "solutions": ["struct A{\n    let b = 10\n}\nlet a : A? = A()\nprint(a!.b)", "struct A{\n    let b = 10\n}\nlet a : A? = A()\nprint(a?.b)"],
+        "hint": ""
+        
+    },
+    {
+        "id": 4,
+        "name" : "E asy flatMap",
+        "category": "Code result",
+        "question": "What will be printed?\n\nlet numbers = [[1],[2,6],[3],[4],[5]]\n\nprint(numbers.flatMap{$0})",
+        "edit": "",
+        "solutions": ["[1, 2, 6, 3, 4, 5]"],
         "hint": ""
         
     }
