@@ -14,7 +14,6 @@
 		5C8D84F629CDD2460045620E /* SolveSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D84F529CDD2460045620E /* SolveSwiftTests.swift */; };
 		5C8D850029CDD2470045620E /* SolveSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D84FF29CDD2470045620E /* SolveSwiftUITests.swift */; };
 		5C8D850229CDD2470045620E /* SolveSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D850129CDD2470045620E /* SolveSwiftUITestsLaunchTests.swift */; };
-		5C8D851129CDD5710045620E /* ChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851029CDD5710045620E /* ChallengeModel.swift */; };
 		5C8D851329CDDEF80045620E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851229CDDEF80045620E /* Challenge.swift */; };
 		5C8D851529CDE2CF0045620E /* Challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D851429CDE2CF0045620E /* Challenges.json */; };
 		5C8D851729CDE77C0045620E /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D851629CDE77C0045620E /* ChallengesView.swift */; };
@@ -52,7 +51,6 @@
 		5C8D84FB29CDD2470045620E /* SolveSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolveSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8D84FF29CDD2470045620E /* SolveSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveSwiftUITests.swift; sourceTree = "<group>"; };
 		5C8D850129CDD2470045620E /* SolveSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5C8D851029CDD5710045620E /* ChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModel.swift; sourceTree = "<group>"; };
 		5C8D851229CDDEF80045620E /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		5C8D851429CDE2CF0045620E /* Challenges.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Challenges.json; sourceTree = "<group>"; };
 		5C8D851629CDE77C0045620E /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			children = (
 				5C8D851829CDE7920045620E /* ChallengesModel.swift */,
 				5C8D851229CDDEF80045620E /* Challenge.swift */,
-				5C8D851029CDD5710045620E /* ChallengeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,7 +300,6 @@
 				5C8D84E729CDD2440045620E /* ContentView.swift in Sources */,
 				5C8D84E529CDD2440045620E /* SolveSwiftApp.swift in Sources */,
 				5C8D851B29D053360045620E /* ChallengeView.swift in Sources */,
-				5C8D851129CDD5710045620E /* ChallengeModel.swift in Sources */,
 				5C8D851929CDE7920045620E /* ChallengesModel.swift in Sources */,
 				5C8D851D29D1D9F20045620E /* SolutionView.swift in Sources */,
 				5C8D851329CDDEF80045620E /* Challenge.swift in Sources */,

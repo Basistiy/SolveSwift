@@ -42,7 +42,7 @@
     },
     {
         "id": 4,
-        "name" : "E asy flatMap",
+        "name" : "Easy flatMap",
         "category": "Code result",
         "question": "What will be printed?\n\nlet numbers = [[1],[2,6],[3],[4],[5]]\n\nprint(numbers.flatMap{$0})",
         "edit": "",
